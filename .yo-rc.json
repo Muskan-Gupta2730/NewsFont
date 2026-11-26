@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "24.19.0",
+    "sdksVersions": {},
+    "version": "1.24.2",
+    "libraryName": "news-font",
+    "libraryId": "81caf964-20ff-4017-aaa3-28d50df4e6c0",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "news-font",
+    "solutionShortDescription": "news-font description",
+    "skipFeatureDeployment": true,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

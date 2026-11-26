@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://sirva365.sharepoint.com/sites/SirvaHumanResourcesIntranet_DEV/SitePages/test.aspx",
+      "customActions": {
+        "3150e284-d415-4aa2-bfde-b27f1cf6f194": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+       "headingColor": "#120052"
+          }
+        }
+      }
+    },
+    "newsFont": {
+      "pageUrl": "https://sirva365.sharepoint.com/sites/SirvaHumanResourcesIntranet_DEV/SitePages/test.aspx",
+      "customActions": {
+        "3150e284-d415-4aa2-bfde-b27f1cf6f194": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+           "headingColor": "#120052"
+          }
+        }
+      }
+    }
+  }
+}
