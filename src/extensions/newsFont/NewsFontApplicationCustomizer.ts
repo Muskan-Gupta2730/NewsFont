@@ -11,8 +11,7 @@ interface IRgba {
   a: number;
 }
 
-// The out-of-box News web part
-const NEWS_WEBPART: string = '[data-sp-web-part-id="8c88f208-6c77-4bdb-86a0-0c47b4316588"]';
+const NEWS_HEADLINE: string = '[data-automation-id="newsItemTitle"]';
 const WHITE: string = '#ffffff';
 
 export default class NewsFontApplicationCustomizer
@@ -52,31 +51,11 @@ export default class NewsFontApplicationCustomizer
     }, 200);
   }
 
+  // Colour every news post headline on the page
   private _applyColors(): void {
-    const webParts: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(NEWS_WEBPART);
-
-    for (let i: number = 0; i < webParts.length; i++) {
-      const wp: HTMLElement = webParts[i];
-
-      // A) Web part title ("Latest Sirva Life stories")
-      const titles: NodeListOf<HTMLElement> =
-        wp.querySelectorAll<HTMLElement>('[data-automation-id="webPartTitleReadMode"]');
-      for (let t: number = 0; t < titles.length; t++) {
-        const color: string = this._pickColor(titles[t]);
-        this._paint(titles[t], color);
-        // The title has its own colour on inner <span>s, so paint those too
-        const inner: NodeListOf<HTMLElement> = titles[t].querySelectorAll<HTMLElement>('*');
-        for (let k: number = 0; k < inner.length; k++) {
-          this._paint(inner[k], color);
-        }
-      }
-
-      // B) Post headlines
-      const heads: NodeListOf<HTMLElement> =
-        wp.querySelectorAll<HTMLElement>('[data-automation-id="newsItemTitle"]');
-      for (let h: number = 0; h < heads.length; h++) {
-        this._paint(heads[h], this._pickColor(heads[h]));
-      }
+    const heads: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(NEWS_HEADLINE);
+    for (let h: number = 0; h < heads.length; h++) {
+      this._paint(heads[h], this._pickColor(heads[h]));
     }
   }
 
