@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "news-font-application-customizer": {
+    "newsfaq-font-application-customizer": {
       "components": [
         {
-          "entrypoint": "./lib/extensions/newsFont/NewsFontApplicationCustomizer.js",
-          "manifest": "./src/extensions/newsFont/NewsFontApplicationCustomizer.manifest.json"
+          "entrypoint": "./lib/extensions/newsFAQFont/NewsFAQFontApplicationCustomizer.js",
+          "manifest": "./src/extensions/newsFAQFont/NewsFAQFontApplicationCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "NewsFontApplicationCustomizerStrings": "lib/extensions/newsFont/loc/{locale}.js"
+    "NewsFAQFontApplicationCustomizerStrings": "lib/extensions/newsFAQFont/loc/{locale}.js"
   }
 }

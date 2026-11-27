@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <CustomAction
-        Title="NewsFont"
+        Title="NewsFAQFont"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="3150e284-d415-4aa2-bfde-b27f1cf6f194"
         ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
